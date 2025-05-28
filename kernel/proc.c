@@ -681,3 +681,14 @@ procdump(void)
     printf("\n");
   }
 }
+
+// returns the number of processes by SH
+uint64 get_nproc(void) {
+    uint64 nproc = 0;
+    for (int i = 0; i<NPROC; ++i) {
+        //acquire(&proc[i].lock);
+        if (proc[i].state != UNUSED) ++nproc;
+        //release(&proc[i].lock);
+    }
+    return nproc;
+}

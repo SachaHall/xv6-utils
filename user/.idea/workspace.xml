@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb87ed4-f9c7-45d6-900f-4e82078af77f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../kernel/defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/../kernel/defs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kernel/kalloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/../kernel/kalloc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kernel/proc.c" beforeDir="false" afterPath="$PROJECT_DIR$/../kernel/proc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kernel/syscall.c" beforeDir="false" afterPath="$PROJECT_DIR$/../kernel/syscall.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kernel/syscall.h" beforeDir="false" afterPath="$PROJECT_DIR$/../kernel/syscall.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kernel/sysproc.c" beforeDir="false" afterPath="$PROJECT_DIR$/../kernel/sysproc.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.h" beforeDir="false" afterPath="$PROJECT_DIR$/user.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usys.pl" beforeDir="false" afterPath="$PROJECT_DIR$/usys.pl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +66,7 @@
       <updated>1728282845926</updated>
       <workItem from="1728282846972" duration="12466000" />
       <workItem from="1728847912394" duration="6000" />
-      <workItem from="1748279418534" duration="728000" />
+      <workItem from="1748279418534" duration="21488000" />
     </task>
     <servers />
   </component>
