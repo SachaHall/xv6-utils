@@ -437,3 +437,24 @@ copyinstr(pagetable_t pagetable, char *dst, uint64 srcva, uint64 max)
     return -1;
   }
 }
+
+#define PA2KVA(pa) ((void *)((pa) + KERNBASE))
+
+void vmprint_walk(pagetable_t pagetable, int depth) {
+    for (int i = 0; i<512; ++i) {
+        if (!(pagetable[i] & PTE_V)) continue;
+        uint64 pa = PTE2PA(pagetable[i]);
+        for (int _ = 0; _ < depth; ++_) {
+            if (_) printf("  ");
+            printf("..");
+        }
+        printf("%d: pte %p pa %p\n", i, pagetable[i], pa);
+        if (!(pagetable[i] & (PTE_R | PTE_W | PTE_X))) vmprint_walk((pagetable_t)pa, depth+1);
+    }
+
+}
+
+void vmprint(pagetable_t pagetable) {
+    printf("page table %p\n", pagetable);
+    vmprint_walk(pagetable, 1);
+}

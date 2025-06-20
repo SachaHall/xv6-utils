@@ -1,0 +1,4 @@
+page 0 is executable and accessible so its probably the code segment
+page 2 can be read and written to so its something like the data segment where the user can read and write data
+page 1 is only readable but not writable
+the third last is readable and writeable and has a high va so its probably something like the stack or heap
